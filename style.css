@@ -4,17 +4,10 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-header {
-    background-color: #FFF4E6;
-    padding: 50px 240px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
+.common-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
 }
 .primary-btn {
     border-radius: 8px;
@@ -26,9 +19,25 @@ nav {
     cursor: pointer;
     border: 0;
 }
+.text-light-gray {
+    color: #727272;
+    line-height: 1.5;
+    margin: 10px 0px;
+}
+/*========================= This is header section styles=========================== */
+header {
+    background-color: #FFF4E6;
+    padding: 50px 240px;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
 #nav-title {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #131313;
 }
@@ -46,6 +55,7 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
+
 .banner{
     max-width: 800px;
     text-align: center;
@@ -53,17 +63,38 @@ nav li a {
     
 }
 
-.banner-title {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #131313;
-}
 .banner img{
     width: 100%;
     margin-top: 20px;
 }
-.text-light-gray {
+
+/* This is main section style  */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.Features{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    justify-content: space-between;
+
+}
+.card-container img{
+    width: 100%;
+}
+.text-container{
+    width: 50%;
+    margin: auto 0;
+    padding: 50px;
+}
+.primary-color{
+    color:#FF900E ;
+}
+#sp-color{
     color: #727272;
-    line-height: 1.5;
-    margin: 10px 0px;
 }
